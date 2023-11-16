@@ -119,11 +119,11 @@ class _ShopFormPageState extends State<ShopFormPage> {
                           backgroundColor:
                           MaterialStateProperty.all(Colors.indigo),
                         ),
-                        onPressed: () {
+                        onPressed: () async {
                           if (_formKey.currentState!.validate()) {
                             // Send request to Django and wait for the response
                             final response = await request.postJson(
-                                "http://rakha-fahim-tutorial.pbp.cs.ui.ac.id/create-flutter/",
+                                "http://http://localhost:8000/create-flutter/",
                                 jsonEncode(<String, String>{
                                   'name': _name,
                                   'price': _price.toString(),
