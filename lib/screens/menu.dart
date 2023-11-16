@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/widgets/left_drawer.dart';
-import 'package:shopping_list/screens/shop_card.dart';
+import 'package:shopping_list/widgets/shop_card.dart';
 
 
-class ShopItem {
-  final String name;
-  final IconData icon;
-
-  ShopItem(this.name, this.icon);
-}
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
